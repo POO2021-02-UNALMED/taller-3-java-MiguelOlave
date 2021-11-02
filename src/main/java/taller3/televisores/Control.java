@@ -5,24 +5,24 @@ public class Control {
 	
 	
 	public void turnOn() {
-		tv.estado = true;
+		this.tv.turnOn();
 	}
 	public void turnOff() {
-		tv.estado = false;
+		this.tv.turnOff();
 	}
 	
 	
 	public void canalUp() {
 		if(tv.estado) {
 			if(tv.getCanal()<120) {
-				tv.setCanal(tv.getCanal()+1);
+				this.tv.canalUp();
 			}
 		}
 	}
 	public void canalDown() {
 		if(tv.estado) {
 			if(tv.getCanal()>1) {
-				tv.setCanal(tv.getCanal()-1);
+				this.tv.canalDown();
 			}
 		}	
 	}
@@ -31,21 +31,21 @@ public class Control {
 	public void volumenUp() {
 		if(tv.estado) {
 			if(tv.getVolumen()<7) {
-				tv.setVolumen(tv.getVolumen()+1);
+				this.tv.volumenUp();
 			}
 		}
 	}
 	public void volumenDown() {
 		if(tv.estado) {
 			if(tv.getVolumen()>0) {
-				tv.setVolumen(tv.getVolumen()-1);
+				this.tv.volumenDown();
 			}
 		}	
 	}
 	
 	
 	public void setCanal(int can) {
-		tv.setCanal(can); 
+		this.tv.setCanal(can);
 	}
 	
 	

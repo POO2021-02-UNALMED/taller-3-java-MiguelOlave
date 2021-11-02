@@ -53,8 +53,60 @@ public class TV {
 		}
 	}
 	
+	public int getNumTV() {
+		return numTV;
+	}
+	
+	
+	public void turnOn() {
+		estado = true;
+	}
+	public void turnOff() {
+		estado = false;
+	}
+	
+	
 	public boolean getEstado() {
 		return estado;
 	}
+	
+	
+	public void canalUp() {
+		if(estado) {
+			if(getCanal()<120) {
+				setCanal(getCanal()+1);
+			}
+		}
+	}
+	public void canalDown() {
+		if(estado) {
+			if(getCanal()>1) {
+				setCanal(getCanal()-1);
+			}
+		}	
+	}
+	
+	
+	public void volumenUp() {
+		if(estado) {
+			if(getVolumen()<7) {
+				setVolumen(getVolumen()+1);
+			}
+		}
+	}
+	public void volumenDown() {
+		if(estado) {
+			if(getVolumen()>0) {
+				setVolumen(getVolumen()-1);
+			}
+		}	
+	}
+	
+	
+	
+	
+	
+	
+	
 
 }
