@@ -63,5 +63,4 @@ public class Control {
 		this.enlazar(t);
 	}
 	
-	
 }
