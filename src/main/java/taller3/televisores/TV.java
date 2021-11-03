@@ -48,8 +48,10 @@ public class TV {
 		return canal;
 	}
 	public void setCanal(int can) {
-		if(can<121 && can>0) {
-			canal = can;
+		if(estado) {
+			if(can<121 && can>0) {
+				canal = can;
+			}
 		}
 	}
 	
